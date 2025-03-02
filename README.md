@@ -23,3 +23,16 @@ option(FOX_IMGUI_DEMO "Compile ImGui demo" OFF)
 option(FOX_IMGUI_IMPLOT "Compile implot" OFF)
 option(FOX_IMGUI_IMPLOT_DEMO "Compile implot demo" OFF)
 ```
+
+### WSL
+Build should be without wayland
+```sh
+cmake -D GLFW_BUILD_WAYLAND=OFF ..
+```
+X11 + OpenGL
+```sh
+sudo apt install libx11-dev libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev
+```
+```sh
+sudo apt install libgl1-mesa-dev
+```
