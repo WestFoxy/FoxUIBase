@@ -26,7 +26,7 @@ public:
 	
     FoxImgui() = delete;
     ~FoxImgui();
-    FoxImgui::FoxImgui(std::string title = "TestFoxWindow",
+    FoxImgui(std::string title = "FoxWindow",
         unsigned int width = 1280, unsigned int height = 720,
         UserImguiCallback* imgui_callback = nullptr,
         UserRenderCallback* render_callback = nullptr,
